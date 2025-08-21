@@ -4,85 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/SiteIgreja/CSS/igreja.css">
-    <title>Igreja Santo Antônio</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <header class="flex-between">
-        <div>
-            <h3 class="text-align">Igreja Santo Antônio</h3>
+    <header>
+        <div class="logo">
+            <h3>Igreja Santo Antônio</h3>
         </div>
-        <div class="flex-evenly">
-            <p class="options-header">Eventos</p>
-            <p class="options-header">Sobre</p>
-            <p class="options-header">Doar</p>
-        </div>
+        <nav class="nav-menu">
+            <div class="nav-item" onclick="scrollToSection('mass-schedule')">Missas</div>
+            <div class="nav-item" onclick="scrollToSection('about')">Sobre</div>
+            <div class="nav-item" onclick="scrollToSection('contact')">Contato</div>
+            <div class="nav-item" onclick="scrollToSection('donate')">Doar</div>
+        </nav>
     </header>
 
-    <main class="main">
-        
-        <div class="banner">
-            <div class="textBanner">
-                <h1 class="text-align">Venha nos conhecer!</h1>
-                <h3 class="text-align">A Capela Santo Antônio está de braços abertos para você!</h3>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Venha nos conhecer!</h1>
+                <h3>A Capela Santo Antônio está de braços abertos para você!</h3>
+                <button class="cta-button" onclick="scrollToSection('mass-schedule')">Ver Horários das Missas</button>
             </div>
-        </div>
+        </section>
 
-        <h2 class="text-align-missa">Horários das Missas</h2>
-        <div class="flex-evenly">
-            <div class="card">
-                <div class="title-card">
-                    <p>Missa XXXXXX</p>
+        <section id="mass-schedule" class="section mass-section">
+            <h2 class="section-title">Horários das Missas</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-title">
+                        <p>Missa Dominical</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Nossa celebração principal da semana, onde toda a comunidade se reúne para louvar e agradecer. Venha participar da Eucaristia e fortalecer sua fé em comunidade. Todas as famílias são bem-vindas.</p>
+                    </div>
+                    <div class="card-date">
+                        <p>Domingo - Horário: 9h00</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime nesciunt, rerum voluptatum laudantium est labore facere, ipsa suscipit quia quod nam ratione atque quaerat natus! Quia libero fuga esse.</p>
+                
+                <div class="card">
+                    <div class="card-title">
+                        <p>Missa Vespertina</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Uma celebração tranquila no fim da tarde, ideal para quem busca um momento de reflexão e paz após o dia de trabalho. Momento especial de oração e comunhão.</p>
+                    </div>
+                    <div class="card-date">
+                        <p>Sábado - Horário: 19h00</p>
+                    </div>
                 </div>
-                <div class="card-date">
-                    <p>Dia XXXX. Horário: 19h</p>
+                
+                <div class="card">
+                    <div class="card-title">
+                        <p>Missa das Crianças</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Celebração especial voltada para as famílias com crianças, com liturgia adaptada e participação ativa dos pequenos. Um momento alegre e educativo para toda a família.</p>
+                    </div>
+                    <div class="card-date">
+                        <p>Domingo - Horário: 17h00</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">
+                        <p>Missa da Semana</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Encontro semanal para fortalecer a fé durante os dias úteis. Uma oportunidade de crescimento espiritual em meio à rotina, com reflexões sobre as Escrituras.</p>
+                    </div>
+                    <div class="card-date">
+                        <p>Quarta-feira - Horário: 19h30</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="title-card">
-                    <p>Missa XXXXXX</p>
-                </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime nesciunt, rerum voluptatum laudantium est labore facere, ipsa suscipit quia quod nam ratione atque quaerat natus! Quia libero fuga esse.</p>
-                </div>
-                <div class="card-date">
-                    <p>Dia XXXX. Horário: 19h</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="title-card">
-                    <p>Missa XXXXXX</p>
-                </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime nesciunt, rerum voluptatum laudantium est labore facere, ipsa suscipit quia quod nam ratione atque quaerat natus! Quia libero fuga esse.</p>
-                </div>
-                <div class="card-date">
-                    <p>Dia XXXX. Horário: 19h</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="title-card">
-                    <p>Missa XXXXXX</p>
-                </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime nesciunt, rerum voluptatum laudantium est labore facere, ipsa suscipit quia quod nam ratione atque quaerat natus! Quia libero fuga esse.</p>
-                </div>
-                <div class="card-date">
-                    <p>Dia XXXX. Horário: 19h</p>
-                </div>
-            </div>
-        </div>
+        </section>
 
-
-        <div class="comentario">
-            <div>
-                <p>Escreva um comentário ou sugestão</p>
-                <textarea type="text" ></textarea>
+        <section id="about" class="section about-section">
+            <h2 class="section-title">Sobre Nossa Igreja</h2>
+            <div class="about-content">
+                <p>A Capela Santo Antônio é um lugar de fé, esperança e amor que serve nossa comunidade há décadas. Dedicada a Santo Antônio de Pádua, conhecido como o santo dos milagres e protetor dos necessitados, nós acolhemos fiéis de todas as idades e caminhadas da vida.</p>
+                <br>
+                <p>Nossa missão é ser um farol de luz e esperança, oferecendo não apenas celebrações litúrgicas, mas também apoio espiritual, obras sociais e um espaço de comunhão fraterna. Aqui, cada pessoa é valorizada e encontra seu lugar na grande família de Deus.</p>
+                <br>
+                <p>Venha nos visitar e descobrir como a fé pode transformar sua vida. Todos são bem-vindos em nossa casa!</p>
             </div>
-        </div>
+        </section>
 
+        <section id="contact" class="section comment-section">
+            <div class="comment-container">
+                <h3>Deixe sua Mensagem</h3>
+                <p>Compartilhe conosco suas orações, sugestões ou testemunhos. Sua palavra é importante para nossa comunidade!</p>
+                <br>
+                <form class="comment-form" onsubmit="submitMessage(event)">
+                    <textarea class="comment-textarea" placeholder="Escreva aqui sua mensagem, pedido de oração ou sugestão..." required></textarea>
+                    <input type="text" class="comment-textarea" placeholder="Seu nome (opcional)" style="min-height: auto; height: 50px;">
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer id="donate">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h4> Contato</h4>
+                    <p>Telefone: (11) 1234-5678<br>Email: contato@igrejasantoantonio.org.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4> Endereço</h4>
+                    <p>Rua da Fé, 123<br>Centro, Sua Cidade<br>CEP: 12345-678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Como Doar?</h4>
+                    <p>PIX: doar@igrejasantoantonio.org.br<br>Conta: Banco Brasil<br>Agência: 1234-5 | Conta: 67890-1</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <p><a href="https://www.facebook.com/?locale=pt_BR">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/">Instagram</a></p>
+                </div>
+            </div>
+            <hr style="border: 1px solid #4A5568; margin: 2rem 0;">
+            <p>&copy; 2025 Igreja Santo Antônio.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function submitMessage(event) {
+            event.preventDefault();
+            alert('Obrigado por sua mensagem! Que Deus abençoe você. \n\nSua mensagem foi recebida com carinho e será lida pela nossa equipe pastoral.');
+            event.target.reset();
+        }
+
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
 </body>
 </html>
