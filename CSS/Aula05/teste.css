@@ -1,0 +1,64 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a{
+    color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited{
+    color: brown;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.especial:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.especial:before{
+    content: ">>";
+    font-weight: bolder;
+}
+
+.especial:after{
+    content: "<<";
+    font-weight: lighter;
+}
+
+div p{
+    display: none;
+}
+
+div:hover  p{
+    display: block;
+    background-color: yellowgreen;
+}
+
+#idlegal{
+    background-color: darkgreen;
+    color: wheat;
+    text-align: center;
+}
+
+.topic{
+    text-align: right;
+}
+
+.text{
+    text-align: justify;
+}
+

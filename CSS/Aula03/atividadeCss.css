@@ -3,7 +3,11 @@
 html{
     font-family: "Roboto";
     color: #FFF;
-    background-color: #7c1fa9;
+    background-color: #ab6fc6;
+}
+
+body{
+    margin: 0px;
 }
 
 h1{
@@ -17,7 +21,23 @@ img{
 }
 
 header{
+    background-color: #5f247c;
     margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+h1{
+    margin: 0px;
+}
+
+.header{
+    padding: 10px;
 }
 
 .card{
@@ -48,4 +68,41 @@ header{
 .descricao{
     text-align: center;
     font-weight: 800;
+}
+
+footer {
+  margin-top: 20px;
+    background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+footer span {
+  color: red;
 }
