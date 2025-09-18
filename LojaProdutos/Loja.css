@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #F5F5F0;
+    padding: 0;
+    margin: 0; 
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+i{
+    color: #C2B280;
+}
+
+.just-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.just-between-titu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.text-somos{
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.card {
+  background-color: #1C1C1C;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px; /* Set width for each card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow around the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 285px;
+  background-color: #F5F5F0;
+  border: #000 solid 0.5px;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-card {
+  color: #C2B280;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descr-card {
+  color: #C2B280;
+  font-size: 0.9rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.preco-card {
+  color: #C2B280;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto a new line if needed */
+  justify-content: space-evenly; /* Ensures space between the cards */
+  gap: 20px; 
+  padding: 0 20px; /* Optional padding for spacing */
+}
+
+
+footer {
+  background-color: #1C1C1C; /* Dark background for the footer */
+  color: #C2B280; /* Light golden text */
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
