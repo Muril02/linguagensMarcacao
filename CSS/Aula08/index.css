@@ -1,0 +1,49 @@
+div.quad{
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#q1{
+    background-color: aqua;
+}
+
+#q2{
+    /* background-image: linear-gradient(to top, black, blue); */
+    background-image: radial-gradient(closest-side, black, blue);
+}
+
+#q3 {
+    background-image: url(/IMGS/Aula01/GaviaoBrabo.jpg);
+    background: no-repeat cover;   
+}
+
+body{
+    /* background-color: magenta;
+    background-image: url("");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    background: magenta url(#) center center no-repeat fixed;
+}
+
+#dentro{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fora{
+    height: 10hv;
+    background-color: red;
+    position: relative;
+}
