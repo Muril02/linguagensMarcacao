@@ -1,0 +1,16 @@
+:root{
+    --cor1 : purple;
+    --cor2: orange;
+    --font01: Serif;
+}
+
+body{
+    font-family: var(--font01);
+    color: var(--cor1);
+    line-height: 1.5rem;
+    background-color: var(--cor2);
+}
+
+h1{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0,.2);
+}
