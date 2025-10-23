@@ -1,0 +1,17 @@
+.corFundoTitulo{
+    background: linear-gradient(90deg,#FFD369 , #222831 );
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+*body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
